@@ -36,7 +36,7 @@ body > div {
 
     text-align: center;
 
-    font-size: 1.5em;
+    font-size: 2vh;
 }
 
 
@@ -66,30 +66,33 @@ header div img {
     position: absolute;
     float: left;
 
+    height: 5em;
+
     margin: 0.6em;
 }
 
-nav ul {
+nav #myLinks {
     width: auto;
     float: right;
 
-    margin: 2em;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-left: 2em;
     font-family: 'Roboto', sans-serif;
-}
 
-nav ul li a {
+    margin: 1.5em;
+
     font-size: 1.5em;
 
+    display: inline-block;
+}
+
+nav #myLinks a {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
+
+    margin-left: 2em;
 }
-nav ul li a:hover {
+
+nav #myLinks a:hover {
     color: rgb(93, 93, 93);
 }
 
