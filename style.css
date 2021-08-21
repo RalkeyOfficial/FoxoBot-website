@@ -80,8 +80,6 @@ nav #myLinks {
     margin: 1.5em;
 
     font-size: 1.5em;
-
-    display: inline-block;
 }
 
 nav #myLinks a {
@@ -95,6 +93,26 @@ nav #myLinks a {
 nav #myLinks a:hover {
     color: rgb(93, 93, 93);
 }
+
+nav .icon {
+    width: auto;
+    float: right;
+
+    margin: 1.4em;
+
+    font-size: 1.5em;
+}
+
+@media (max-width: 750px) {
+    nav #myLinks {
+        display: none;
+    }
+}
+@media (min-width: 750px) {
+    nav .icon {
+        display: none;
+    }
+}​
 
 /********************/
 /*                  */
