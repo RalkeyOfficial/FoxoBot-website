@@ -33,6 +33,7 @@ body > div {
     height: 100vh;
 
     margin: 0 auto;
+    padding: 1em;
 
     text-align: center;
 
@@ -75,6 +76,8 @@ nav #myLinks {
     width: auto;
     float: right;
 
+    display: block;
+
     font-family: 'Roboto', sans-serif;
 
     margin: 1.5em;
@@ -97,17 +100,45 @@ nav #myLinks a:hover {
 nav .icon {
     width: auto;
     float: right;
+    right: 0;
+    top: 0;
 
-    margin: 1.4em;
+    color: black;
+
+    margin: 1em;
 
     font-size: 1.5em;
+
+    display: block;
 }
 
 @media (max-width: 750px) {
+    header div img {
+        height: 4em;
+    }
+
+    nav #myLinks {
+        width: 100%;
+    
+        font-family: 'Roboto', sans-serif;
+    
+        margin: 0.6em;
+    
+        font-size: 1.4em;
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+    }
+    nav #myLinks a {
+        margin: 0;
+    }
+
     nav #myLinks {
         display: none;
     }
 }
+
 @media (min-width: 750px) {
     nav .icon {
         display: none;
